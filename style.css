@@ -241,6 +241,13 @@ section#home a {
   padding-bottom: 5px;
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
+  transition: 0.3s linear scale, 0.3s linear color, 0.3s linear border-bottom;
+}
+
+section#home a:hover {
+  color: #ffb41f;
+  scale: 1.02;
+  border-bottom: 1px solid #ffb41f;
 }
 
 section#about {
