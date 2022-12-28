@@ -12,7 +12,8 @@ const toggleNav = () => {
     if (!openNav) {
         openNav = true;
         body.style.overflow = 'hidden';
-        overlay.classList.replace('overlay-slide-left', 'overlay-slide-right');
+        (overlay.classList.contains('overlay-slide-left')) ? overlay.classList.replace('overlay-slide-left', 'overlay-slide-right') :
+            overlay.classList.add('overlay-slide-right');
         navLinksContainer.forEach((linkContainer, index) =>
             linkContainer.classList.replace(`slide-out-${index + 1}`, `slide-in-${index + 1}`)
         );
