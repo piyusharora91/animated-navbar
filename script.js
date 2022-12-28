@@ -1,3 +1,4 @@
+const body = document.getElementsByTagName('body');
 const menuBars = document.querySelector('#menu-bars');
 const overlay = document.querySelector('#overlay');
 const navLinks = document.querySelectorAll('.nav-links');
