@@ -233,7 +233,7 @@ section {
 }
 
 section#home {
-  background-image: url("https://cdn.pixabay.com/photo/2016/05/05/18/03/coupe-1374448_1280.jpg");
+  background-image: url("./assets/home-background.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -277,6 +277,7 @@ section#contact {
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
+
   section#home a {
     top: 1rem;
     left: 1rem;
