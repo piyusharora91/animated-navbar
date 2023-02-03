@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
 
 :root {
   --primaryColor: #fff;
   --navColor1: #6d2576;
-  --navColor2: #1C043E;
+  --navColor2: #1c043e;
   --navColor3: #a63d18;
-  --navColor4: #312E2B;
-  --navColor5: #C0B8AA;
+  --navColor4: #312e2b;
+  --navColor5: #c0b8aa;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 body {
   margin: 0;
   background: #000;
-  font-family: 'Aboreto', sans-serif;
+  font-family: "Aboreto", sans-serif;
 }
 
 /* --- Navigation Menu ------------------------------ */
@@ -74,7 +74,7 @@ nav ul li a {
   text-align: center;
   width: max-content;
   margin: auto;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 
 nav ul li a:hover {
@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 nav ul li a::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 95%;
   height: 4px;
@@ -92,7 +92,7 @@ nav ul li a::before {
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 nav ul li a:hover::before {
@@ -259,6 +259,14 @@ section#home a:hover {
   border-bottom: 1px solid #ffb41f;
 }
 
+section#home h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  box-shadow: 0px 0px 15px 15px #fff;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+}
+
 section#about {
   background-color: var(--navColor2);
 }
@@ -275,9 +283,20 @@ section#contact {
   background-color: var(--navColor5);
 }
 
-/* Media Query: Large Smartphone (Vertical) */
-@media (max-width: 600px) {
+.section-links {
+  color: white;
+  text-decoration: none;
+  transition: 0.8s all linear;
+  border-radius: 10px;
+  padding: 7px;
+}
 
+.section-links:hover {
+  box-shadow: 0px 0px 7px 7px #fff;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media (max-width: 800px) {
   section#home a {
     top: 1rem;
     left: 1rem;
@@ -286,5 +305,11 @@ section#contact {
   .menu-bars {
     top: 0.5rem;
     right: 1rem;
+  }
+
+  section#home h1 {
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+    box-shadow: 0px 0px 10px 10px #fff;
   }
 }
